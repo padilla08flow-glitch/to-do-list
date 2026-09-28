@@ -1,0 +1,49 @@
+/**buscador**/
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: var(---bg-color);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 12px;
+    gap: 8px;
+}
+
+.search-box i {
+    color: var(--text-muted);
+}
+
+.search-box input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+/*botones de filtro*/
+.filters-container {
+    display: flex;
+    gap: 8px;
+}
+
+.filters-container button {
+    flex: 1;
+  background-color: transparent;
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: all 0.2s;
+}
+
+.filters-container button.active,
+.filters-container button:hover {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
